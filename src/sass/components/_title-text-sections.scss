@@ -1,0 +1,22 @@
+.section-title {
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 1.26;
+}
+
+.section-subtitle {
+  font-size: 18px;
+  line-height: 1.66;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 1.65;
+  }
+}
+
+.section-description {
+  @media (min-width: 768px) {
+    font-size: 18px;
+    line-height: 1.56;
+  }
+}
