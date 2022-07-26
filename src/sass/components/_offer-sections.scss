@@ -12,28 +12,6 @@
   }
 }
 
-.offer__img-wrap {
-  background: $upload;
-  min-width: 320px;
-  @media (min-width: 768px) {
-    min-width: 368px;
-  }
-
-  @media (min-width: 1360px) {
-    min-width: 670px;
-  }
-}
-
-.offer__picture {
-  width: 100%;
-  height: 100%;
-  display: flex;
-}
-
-.offer__img {
-  object-fit: cover;
-}
-
 .offer__content-wrap {
   padding: 40px 30px;
   background-color: $green;
