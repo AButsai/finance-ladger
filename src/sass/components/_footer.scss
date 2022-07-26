@@ -1,0 +1,16 @@
+.footer {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: $black;
+  color: $white;
+}
+
+.footer__copyright {
+  text-align: center;
+  @media (min-width: 768px) {
+    font-size: 18px;
+    line-height: 1.56;
+  }
+}
