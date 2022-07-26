@@ -1,0 +1,75 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: $black;
+  height: 100vh;
+}
+
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.header {
+  flex: 0 0 auto;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+.section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @media (min-width: 1360px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.container {
+  width: 320px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  @media screen and (min-width: 1360px) {
+    width: 1360px;
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
