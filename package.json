@@ -6,7 +6,7 @@
   "homepage": "https://AButsai.github.io/finance-ladger",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html "
+    "build": "parcel build src/*.html --public-url /finance-ladger/"
   },
   "repository": {
     "type": "git",
