@@ -1,6 +1,7 @@
 import { refs } from '../refs/refs.js';
+import { modalCloseEsc } from '../modal/modal.js';
 
-const { callbackForm, callbackWorning, emailInput } = refs;
+const { callbackForm, callbackWorning, emailInput, overlay, body } = refs;
 
 const handleSubmit = e => {
   e.preventDefault();
@@ -9,6 +10,9 @@ const handleSubmit = e => {
     callbackWorning.classList.remove('visually-hidden');
   } else {
     callbackWorning.classList.add('visually-hidden');
+    window.addEventListener('keydown', modalCloseEsc);
+    overlay.classList.remove('visually-hidden');
+    body.classList.add('isOpenModal');
   }
 
   callbackForm.reset();
