@@ -16,9 +16,9 @@
   max-width: calc(100vw - 48px);
   max-height: calc(100vh - 24px);
   padding: 20px 50px 20px 15px;
-  background-color: $white;
+  background-color: var(--white);
   overflow: auto;
-  border-radius: $border-radius;
+  border-radius: var(--border-radius);
 
   @media (min-width: 768px) {
     // width: 704px;
@@ -48,10 +48,10 @@
   align-items: center;
   font-weight: 600;
   font-size: 14px;
-  color: $green;
+  color: var(--green);
 
   &:hover {
-    color: $hero-hover;
+    color: var(--hero-hover);
   }
 }
 

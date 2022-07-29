@@ -1,0 +1,24 @@
+@mixin width-section($width) {
+  max-width: $width;
+}
+
+@mixin flex-section($flex-direction: row) {
+  display: flex;
+  flex-direction: $flex-direction;
+}
+
+@mixin width($width) {
+  width: $width;
+}
+
+@mixin colors($color, $background) {
+  color: $color;
+  background-color: $background;
+}
+
+@mixin padding($padding-top, $padding-right, $padding-bottom, $padding-left) {
+  padding-top: $padding-top;
+  padding-right: $padding-right;
+  padding-bottom: $padding-bottom;
+  padding-left: $padding-left;
+}

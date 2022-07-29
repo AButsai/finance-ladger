@@ -1,0 +1,28 @@
+@import '../mixins/mixin-section.scss';
+
+.blog {
+  @include width-section(100%);
+}
+
+.blog-container {
+  @include padding(0, 0, 0, 0);
+  @media (min-width: 768px) {
+    @include flex-section(row-reverse);
+  }
+}
+
+.blog__content-wrap {
+  @include width(320px);
+  @include padding(40px, 30px, 40px, 30px);
+  @include colors(var(--white), var(--blue));
+
+  @media (min-width: 768px) {
+    @include width(400px);
+    @include padding(40px, 53px, 40px, 32px);
+  }
+
+  @media (min-width: 1360px) {
+    @include width(690px);
+    @include padding(80px, 64px, 80px, 20px);
+  }
+}

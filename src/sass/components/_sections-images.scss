@@ -1,13 +1,12 @@
 .section__img-wrap {
-  background: $upload;
-  min-width: 320px;
+  background: var(--upload);
+  width: 320px;
   @media (min-width: 768px) {
-    min-width: 368px;
+    width: 368px;
   }
 
   @media (min-width: 1360px) {
-    min-width: 670px;
-    height: 460px;
+    width: 670px;
   }
 }
 

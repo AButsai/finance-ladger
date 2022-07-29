@@ -1,0 +1,7 @@
+@mixin hover-btn($color, $background) {
+  &:hover,
+  &:focus {
+    color: $color;
+    background-color: $background;
+  }
+}

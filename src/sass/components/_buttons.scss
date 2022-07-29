@@ -1,0 +1,70 @@
+@import '../mixins/mixin-btn.scss';
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--green);
+  color: var(--white);
+
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+
+  padding: 10px 36px 10px 36px;
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+    line-height: 1.56;
+  }
+}
+
+.hero--btn {
+  padding: 10px 29px 9px 29px;
+
+  @include hover-btn(var(--white), var(--hero-hover));
+
+  @media (min-width: 768px) {
+    padding: 9px 29px 10px 29px;
+    font-size: 18px;
+    line-height: 1.56;
+  }
+
+  @media (min-width: 768px) {
+    padding: 9px 28px 10px 30px;
+  }
+}
+
+.hero__btn-svg {
+  width: 9px;
+  height: 18px;
+  margin-right: 4px;
+}
+
+.btn--border {
+  background-color: transparent;
+  border: 1px solid var(--white);
+  transition: color 250ms ease-in, background-color 250ms ease-in;
+}
+
+.btn--offer {
+  @include hover-btn(var(--green), var(--white));
+}
+
+.blog--btn {
+  @include hover-btn(var(--blue), var(--white));
+}
+
+.btn--collback {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 42px;
+
+  @include hover-btn(var(--white), var(--hero-hover));
+
+  @media (min-width: 768px) {
+    padding: 8px 0 9px;
+  }
+}

@@ -39,7 +39,8 @@
 
 .business__link {
   transition: transform 250ms ease-in;
-  &:hover {
+  &:hover,
+  &:focus {
     transform: scale(1.02);
   }
 }

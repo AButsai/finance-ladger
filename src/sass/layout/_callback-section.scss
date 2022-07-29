@@ -1,0 +1,29 @@
+@import '../mixins/mixin-section.scss';
+
+.callback {
+  @include width-section(100%);
+  padding-bottom: 0;
+}
+
+.callback-container {
+  @include padding(0, 0, 0, 0);
+  @media (min-width: 768px) {
+    @include flex-section();
+  }
+}
+
+.callback__form-wrap {
+  @include width(320px);
+  @include padding(40px, 20px, 40px, 20px);
+  @include colors(var(--black), var(--backgraund-callback));
+
+  @media (min-width: 768px) {
+    @include width(400px);
+    @include padding(40px, 32px, 40px, 32px);
+  }
+
+  @media (min-width: 1360px) {
+    @include width(690px);
+    @include padding(80px, 28px, 80px, 20px);
+  }
+}

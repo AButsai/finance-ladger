@@ -3,13 +3,14 @@ html {
 }
 
 body {
-  font-family: $font-family;
+  font-family: var(--font-family);
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
-  color: $black;
+  color: var(--black);
   height: 100vh;
+  scroll-padding-top: 63px;
 }
 
 .isOpenModal {

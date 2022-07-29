@@ -1,5 +1,5 @@
 .header {
-  max-width: 1360px;
+  max-width: 100%;
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
@@ -27,7 +27,7 @@
 }
 
 .header__show {
-  background-color: $backgraund-header;
+  background-color: var(--backgraund-header);
 }
 
 .header__container {
@@ -41,13 +41,14 @@
   display: flex;
   align-items: center;
 
-  color: $green;
+  color: var(--green);
 
   transition: transform 250ms ease-in;
 
-  &:hover {
+  &:hover,
+  &:focus {
     transform: scale(1.01);
-    color: $logo-hover;
+    color: var(--logo-hover);
   }
 }
 
@@ -65,7 +66,7 @@
 }
 
 .logo__subtitle {
-  color: $white;
+  color: var(--white);
 }
 
 .nav {
@@ -100,7 +101,7 @@
 
 .nav__link {
   position: relative;
-  color: $white;
+  color: var(--white);
 
   @media (min-width: 768px) {
     font-size: 18px;
@@ -112,14 +113,15 @@
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: $green;
+    background-color: var(--green);
     left: 0;
     bottom: 0;
     opacity: 0;
     transition: opacity 250ms ease-in;
   }
 
-  &:hover::after {
+  &:hover::after,
+  &:focus::after {
     opacity: 1;
   }
 }
