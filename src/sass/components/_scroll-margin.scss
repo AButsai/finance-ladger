@@ -1,0 +1,12 @@
+.scroll-margin {
+  padding-top: 120px;
+  margin-top: -120px;
+  @media (min-width: 768px) {
+    padding-top: 82px;
+    margin-top: -82px;
+  }
+  @media (min-width: 1360px) {
+    padding-top: 65px;
+    margin-top: -65px;
+  }
+}

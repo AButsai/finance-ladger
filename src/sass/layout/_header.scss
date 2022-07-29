@@ -1,29 +1,15 @@
 .header {
-  max-width: 100%;
   position: fixed;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 0;
+  left: 0;
+  right: 0;
+
+  max-width: 100%;
   width: 100%;
-  margin: 0 auto;
-  padding-top: 21px;
-  padding-bottom: 21px;
-  background-color: transparent;
+
   z-index: 10;
 
   transition: background-color 250ms ease-in;
-
-  @media (min-width: 768px) {
-    padding-top: 20px;
-    padding-bottom: 20px;
-
-    display: flex;
-    align-items: center;
-  }
-
-  @media (min-width: 1360px) {
-    padding-top: 12px;
-    padding-bottom: 12px;
-  }
 }
 
 .header__show {
@@ -31,9 +17,19 @@
 }
 
 .header__container {
+  padding-top: 21px;
+  padding-bottom: 21px;
+
   @media (min-width: 768px) {
     display: flex;
     align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  @media (min-width: 1360px) {
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
 }
 
