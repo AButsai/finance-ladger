@@ -1,9 +1,11 @@
+import { debounce } from 'lodash';
 import { refs } from '../refs/refs.js';
 
 const { header } = refs;
 
 const headerHide = () => header.classList.contains('header__show');
 const screenWidth = window.screen.width;
+
 const scrollPosition = () =>
   window.pageYOffset || document.documentElement.scrollTop;
 
