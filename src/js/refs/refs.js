@@ -7,6 +7,5 @@ export const refs = {
   callbackWorning: document.querySelector('.callback__worning'),
   emailInput: document.querySelector("[name='email']"),
   loader: document.querySelector('.loader'),
-
   header: document.querySelector('.header'),
 };
